@@ -137,12 +137,12 @@ div#moderation_tools.sidecontentbox.collapsible div{
 }
 
 .flairselector {
- background: white;   
- color: #1e90ff;
+ background: white !important;   
+ color: #1e90ff !important;
 }
 
 .flairselector a {
- color: #1e90ff;
+ color: #1e90ff !important;
 }
 
 /* ----- END ----- */
