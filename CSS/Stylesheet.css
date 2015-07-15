@@ -136,6 +136,17 @@ div#moderation_tools.sidecontentbox.collapsible div{
   padding-right: 10px;
 }
 
+.flairselector {
+ background: white;   
+ color: #1e90ff;
+}
+
+.flairselector a {
+ color: #1e90ff;
+}
+
+/* ----- END ----- */
+
 .sidecontentbox .title h1 {
     color: white;
     font-size: 20px;
@@ -144,8 +155,6 @@ div#moderation_tools.sidecontentbox.collapsible div{
 .sidecontentbox .title {
     text-align: middle;
 }
-
-/* ----- END ----- */
 
 #header-img.default-header{
   text-indent: -9999px;
