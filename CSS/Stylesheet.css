@@ -1,5 +1,16 @@
 /* In testing */
 
+.gold-accent.comment-visits-box {
+  color: dodgerblue !important;
+  border: 1px solid dodgerblue !important;
+  background: white !important;
+}
+
+.comment-visits-box .title {
+  background: white !important;
+  color: dodgerblue !important;
+}
+
 .linkinfo {
     padding-bottom: 20px;
 }
@@ -81,6 +92,16 @@ a.helplink[href="/message/compose?to=%2Fr%2Fcssforcsharp"] {
     width: 280px;
 }
 
+div#moderation_tools.sidecontentbox.collapsible div{
+    text-align: center;
+}
+
+#gilded-icon:hover{
+        -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3); 
+    transform: scale(1.3);
+}
+
 
 /* -------------------------------------------------------------------------------- */
 
@@ -88,8 +109,8 @@ a.helplink[href="/message/compose?to=%2Fr%2Fcssforcsharp"] {
 /* Flair */
 
 .flair {
-      color: white;
-  z-index: 99999;
+    color: white;
+    z-index: 99999;
   min-width: 14px;
   max-width: 14px;
   height: 14px;
@@ -99,11 +120,11 @@ a.helplink[href="/message/compose?to=%2Fr%2Fcssforcsharp"] {
   overflow: hidden;
   padding: 0;
   vertical-align: middle;
-  font-size: 11px!important;
+  font-size: 11px !important;
   position: relative;
-  text-indent: 12px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  text-indent: 14px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
   background: #1e90ff;
@@ -113,7 +134,15 @@ a.helplink[href="/message/compose?to=%2Fr%2Fcssforcsharp"] {
 .flair:hover {
   max-width: 1400px;
   padding-right: 10px;
-  background: #1e90ff;
+}
+
+.sidecontentbox .title h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.sidecontentbox .title {
+    text-align: middle;
 }
 
 /* ----- END ----- */
@@ -193,11 +222,6 @@ div.nub {
     color: #1e90ff;
 }
 
-div.title h1 {
-    position: relative;
-    left: 70px;
-}
-
 li.more a {
     color: #ffffff !important;
 }
@@ -213,6 +237,7 @@ div.title {
     border-radius: 4px 4px 0 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 ul.content {
@@ -284,17 +309,21 @@ div.arrow {
     transition: all 0.3s ease;
 }
 
-.infobar {
+
+/* Search */
+div#searchexpando.infobar {
     background-color: #1e90ff;
     border: 1px solid white;
 }
 
-.infobar a {
+div#searchexpando.infobar a {
     color: white;
+    font-size: 12px;
 }
 
-.infobar label {
+div#searchexpando.infobar label {
     color: white;
+    font-size: 12px;
 }
 
 #search {
@@ -306,6 +335,14 @@ div.arrow {
     border: 2px solid #1e90ff;
     border-radius: 4px;
 }
+
+div#moresearchinfo{
+    color: white;
+    border: 1px solid white !important;
+    margin-top: 20px;
+}
+
+
 
 /* Hide arrows for people not logged in */
 
@@ -364,17 +401,17 @@ ul.flat-vert.icon-menu.hover a {
 
 }
 
-div.thing{
-            -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-div.thing:hover{
+.listing-page .thing:hover {
     border: 1px gray solid;
         -webkit-box-shadow: 2px 5px 10px 2px rgba(0,0,0,0.25);
     -moz-box-shadow: 2px 5px 10px 2px rgba(0,0,0,0.25);
     box-shadow: 2px 5px 10px 2px rgba(0,0,0,0.25);
+}
+
+div.thing {
+            -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .listing-page div.md p strong {
@@ -383,10 +420,6 @@ div.thing:hover{
     font-size: 16px;
 }
 
-.sidecontentbox .title h1 {
-    color: white;
-    font-size: 20px;
-}
 
 .link, .comment {
     background-color: #fff;
@@ -491,13 +524,28 @@ a.default-header {
     transform: scale(1.3);
 }
 
-span.collapse-button {
+
+.collapse-button{
     position: relative;
     top: -4px;
     left: 10px;
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
+    background-color: white !important;
+    border: 1px solid #1e90ff !important;
+    color: #1e90ff !important;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    text-align: center;
+    padding: 1px;
+}
+
+.collapse-button:hover{
+        background-color: #1e90ff !important;
+        border: 1px solid white  !important;
+        color: white !important;
 }
 
 #viewImagesButton {
@@ -512,9 +560,29 @@ span.collapse-button {
     left: -100px;
 }
 
+
+.fancy-toggle-button .active{
+    background: green !important;
+    color: #ffffff;
+    border: 1px solid white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 8px;
+        margin: 3px;
+    border-radius: 4px;
+}
+
+.fancy-toggle-button .active:hover{
+    background: white !important;
+    color: green;
+    border: 1px solid green;
+}
+
+
 /* Scale Stuff */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .side{
         width: 1px;
         display: none;
@@ -561,9 +629,9 @@ span.collapse-button {
 }
 
 #sr-header-area {
-    background-color: #1e90ff;
-    color: white;
-    border-color: white;
+    background-color: #1e90ff !important;
+    color: white !important;
+    border-color: white !important;
     border-style: solid;
     border-top-width: 0;
     border-left-width: 0;
@@ -577,7 +645,7 @@ span.collapse-button {
 }
 
 #srList tr{
-    color: #1e90ff;
+    color: #1e90ff !important;
     border-color: black;
     border-style: solid;
     border-top-width: 0;
@@ -587,31 +655,154 @@ span.collapse-button {
 }
 
 #srList td a{
-    color: #1e90ff;
+    color: #1e90ff !important;
 }
 
+.commentarea .RES-keyNav-activeElement {
+        -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-left: 3px solid #1e90ff;
+}
+
+.commentarea .RES-keyNav-activeElement p {
+        -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 0 0 0 10px;
+}
+
+/* RES Buttons */
+
 #RESShortcutsSort {
-    background-color: #1e90ff;
-    color: #ffffff;
+    background-color: #1e90ff !important;
+    color: #ffffff !important;
 }
 
 #RESShortcutsLeft {
-    background-color: #1e90ff;
-    color: #ffffff;
+    background-color: #1e90ff !important;
+    color: #ffffff !important;
 }
 
 div.res-icon {
-    background-color: #1e90ff;
-    color: #ffffff;
+    background-color: #1e90ff !important;
+    color: #ffffff !important;
 }
 
 #RESShortcutsRight {
-    background-color: #1e90ff;
-    color: #ffffff;
+    background-color: #1e90ff !important;
+    color: #ffffff !important;
 }
 
 #RESShortcutsEditContainer {
-    background-color: #1e90ff;
-    color: #ffffff;
+    background-color: #1e90ff !important;
+    color: #ffffff !important;
 }
 
+.RESshortcutside{
+    background: green !important;
+    color: #ffffff;
+    border: 1px solid white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 8px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+.RESshortcutside.remove{
+    background: red !important;
+    color: #ffffff;
+    border: 1px solid white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 8px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+.RESshortcutside.remove:hover{
+    background: white !important;
+    color: red;
+    border: 1px solid red;
+}
+
+.RESshortcutside:hover{
+    background: white !important;
+    color: green;
+    border: 1px solid green;
+}
+
+.RESDashboardToggle{
+    background: green !important;
+    color: #ffffff;
+    border: 1px solid white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 8px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+.RESDashboardToggle.remove{
+    background: red !important;
+    color: #ffffff;
+    border: 1px solid white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 8px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+.RESDashboardToggle.remove:hover{
+    background: white !important;
+    color: red;
+    border: 1px solid red !important;
+}
+
+.RESDashboardToggle:hover{
+    background: white !important;
+    color: green !important;
+    border: 1px solid green !important;
+}
+
+.RESSubscriptionButton{
+        background: green !important;
+    color: #ffffff !important;
+    border: 1px solid white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 8px;
+    margin: 3px;
+    border-radius: 4px;
+    
+}
+
+.RESSubscriptionButton:hover{
+    background: white !important;
+    color: green !important;
+    border: 1px solid green !important;
+}
+
+.RESSubscriptionButton .unsubscribe{
+        background: red !important;
+    color: #ffffff;
+    border: 1px solid white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 8px;
+    margin: 3px;
+    border-radius: 4px;
+}
+.RESSubscriptionButton .unsubscribe:hover{
+        background: white !important;
+    color: red;
+    border: 1px solid red !important;
+}
