@@ -29,22 +29,7 @@ a.link-button.choice:hover {
     color: #BFBFBF;
 }
 
-div.infobar {
-    background-color: #d6ebff;
-    color: #1e90ff;
-    font-size: 20px;
-}
 
-div.roundfield {
-    border: 1px solid #1e90ff;
-    background-color: #e3f1ff;
-    color: #000000;
-    text-transform: capitalize;
-    -webkit-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.25);
-    -moz-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.25);
-    box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.25);
-    border-radius: 5px 5px 4px 4px;
-}
 
 #suggest-title button {
     color: #ffffff;
@@ -82,7 +67,6 @@ li.more a{
     color: white !important;
 }
 
-
 a.helplink[href="/message/compose?to=%2Fr%2Fcssforcsharp"] {
     padding: 10px;
     border-radius: 4px;
@@ -104,27 +88,53 @@ div#moderation_tools.sidecontentbox.collapsible div{
 
 /* Flair */
 
-.flair {
+.flair{
     color: white;
     z-index: 99999;
-  min-width: 14px;
-  max-width: 14px;
-  height: 14px;
-  line-height: 14px;
-  border-radius: 14px;
-  border: none;
-  overflow: hidden;
-  padding: 0;
-  vertical-align: middle;
-  font-size: 11px !important;
-  position: relative;
-  text-indent: 14px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-  background: #1e90ff;
-  border: 1px white solid;
+    min-width: 14px;
+    max-width: 14px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 14px;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 11px !important;
+    position: relative;
+    text-indent: 14px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    border: 1px white solid;
+      background: black;
+}
+
+.flair-blue {
+    background: #65a4ed;
+}
+
+.flair-red {
+  background: #dd7680;
+}
+
+.flair-yellow {
+  background: #FFFF00;
+  color: black;
+}
+
+.flair-black {
+  background: black;
+  color: white;
+}
+
+.flair-green {
+  background: #4fc761;
+}
+
+.flair-pink {
+  background: #ff7cff;
 }
 
 .flair:hover {
@@ -141,7 +151,85 @@ div#moderation_tools.sidecontentbox.collapsible div{
  color: #1e90ff !important;
 }
 
-/* ----- END ----- */
+/* Link Flair */
+
+.linkflairlabel {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    background: grey;
+    border-radius: 4px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.linkflairlabel:hover {
+    border: 1px solid #1e90ff !important;
+    background: white !important;
+    color: #1e90ff !important;
+}
+
+.linkflair-help .linkflairlabel{
+    background-color: #ff0000;
+}
+
+.linkflair-News .linkflairlabel{
+    background-color: #65a4ed;
+}
+
+.linkflair-Blog .linkflairlabel{
+    background-color: #4fc761;
+}
+
+.linkflair-Tutorial .linkflairlabel{
+    background-color: yellow;
+}
+
+.linkflair-Discussion .linkflairlabel{
+    background-color: rebeccapurple;
+}
+
+.linkflair-Meta .linkflairlabel{
+    background-color: black;
+}
+
+.linkflair-Tool .linkflairlabel{
+    background-color: sienna;
+}
+
+/* Submission */
+
+div.infobar {
+    background-color: red !important;
+    color: white !important;
+    font-size: 22px;
+    border-radius: 4px;
+    border: 1px solid white !important;
+    padding: 20px;
+    text-align: justify;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+div.infobar:hover {
+    background-color: white !important;
+    color: red !important;
+    border: 1px solid red !important;
+}
+
+div.roundfield {
+    border: 1px solid #1e90ff;
+    background-color: #F5F5F5;
+    color: #1e90ff;
+    text-transform: capitalize;
+    border-radius: 5px 5px 4px 4px;
+}
+
+/* --------------- */
 
 .panestack-title {
   border-bottom: 1px solid #1e90ff !important;
@@ -320,20 +408,50 @@ div.bottom {
 }
 
 #header-bottom-left {
-height: 65px;
-padding-top: 0;
-background-image: url(%%Header-Image%%);
-background-repeat: no-repeat;
-background-color: #1e90ff;
--webkit-box-shadow: inset 0 48px 30px -56px rgba(0,0,0,0.75);
--moz-box-shadow: inset 0 48px 30px -56px rgba(0,0,0,0.75);
-box-shadow: inset 0 48px 30px -56px rgba(0,0,0,0.75);
+    height: 65px;
+    padding-top: 0;
+    background-image: url(%%Header-Image%%);
+    background-repeat: no-repeat;
+    background-color: #1e90ff;
+    -webkit-box-shadow: inset 0 48px 30px -56px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0 48px 30px -56px rgba(0,0,0,0.75);
+    box-shadow: inset 0 48px 30px -56px rgba(0,0,0,0.75);
 }
 
 div.arrow {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+
+.arrow.down:hover:before {
+position: absolute;
+display: block;
+z-index: 1000;
+width: 210px;
+padding: 5px;
+border: 1px solid #1e90ff;
+background: white;
+content: "This is NOT a disagree button. Please use lightly.";
+text-align: center;
+color: #1e90ff;
+margin-left: 25px;
+margin-top: 5px;
+border-radius: 4px;
+font-weight: 100;
+animation-name: down-box;
+animation-duration: 0.5s;
+}
+
+@keyframes down-box {
+    0%   {
+        opacity: 0;
+        margin-top: 10px;
+        }
+    100% {
+        opacity: 1;
+        margin-top: 5px;
+        }
 }
 
 /* Search */
@@ -366,6 +484,23 @@ div#moresearchinfo{
     color: white;
     border: 1px solid white !important;
     margin-top: 20px;
+}
+
+.btn{
+     background-color: #1e90ff !important;
+     color: white !important;
+     padding: 1rem;
+     border: 1px solid white !important;
+     border-radius: 4px;
+         -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+     background-color: white !important;
+     color: #1e90ff !important;
+     border: 1px solid #1e90ff !important;
 }
 
 /* Hide arrows for people not logged in */
@@ -582,7 +717,6 @@ a.default-header {
     left: -100px;
 }
 
-
 .fancy-toggle-button .active{
     background: green !important;
     color: #ffffff;
@@ -600,7 +734,6 @@ a.default-header {
     color: green;
     border: 1px solid green;
 }
-
 
 /* Scale Stuff */
 
@@ -628,7 +761,6 @@ a.default-header {
     ul.tabmenu{
         width: 100%;
     }
-    
 }
 
 /* [RES] Reddit Enhancement Suite Compatability */
@@ -728,9 +860,9 @@ div.res-icon {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    padding: 8px;
-    margin: 3px;
-    border-radius: 4px;
+    padding: 8px !important;
+    margin: 3px !important;
+    border-radius: 4px !important;
 }
 
 .RESshortcutside.remove{
@@ -740,21 +872,21 @@ div.res-icon {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    padding: 8px;
-    margin: 3px;
-    border-radius: 4px;
+    padding: 8px !important;
+    margin: 3px !important;
+    border-radius: 4px !important; 
 }
 
 .RESshortcutside.remove:hover{
     background: white !important;
-    color: red;
-    border: 1px solid red;
+    color: red !important;
+    border: 1px solid red !important;
 }
 
 .RESshortcutside:hover{
     background: white !important;
-    color: green;
-    border: 1px solid green;
+    color: green !important;
+    border: 1px solid green !important;
 }
 
 .RESDashboardToggle{
@@ -764,9 +896,9 @@ div.res-icon {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    padding: 8px;
-    margin: 3px;
-    border-radius: 4px;
+    padding: 8px !important;
+    margin: 3px !important;
+    border-radius: 4px !important;
 }
 
 .RESDashboardToggle.remove{
@@ -776,9 +908,9 @@ div.res-icon {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    padding: 8px;
-    margin: 3px;
-    border-radius: 4px;
+    padding: 8px !important;
+    margin: 3px !important;
+    border-radius: 4px !important;
 }
 
 .RESDashboardToggle.remove:hover{
@@ -800,9 +932,9 @@ div.res-icon {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    padding: 8px;
-    margin: 3px;
-    border-radius: 4px;
+    padding: 8px !important;
+    margin: 3px !important;
+    border-radius: 4px !important;
     
 }
 
@@ -819,12 +951,18 @@ div.res-icon {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    padding: 8px;
-    margin: 3px;
-    border-radius: 4px;
+    padding: 8px !important;
+    margin: 3px !important;
+    border-radius: 4px !important;
 }
+
 .RESSubscriptionButton .unsubscribe:hover{
     background: white !important;
     color: red !important;
     border: 1px solid red !important;
 }
+
+#baconBit {     
+    background-image: url(%%Konami-Code-Bacon%%) !important;
+ }
+  
