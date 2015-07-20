@@ -29,8 +29,6 @@ a.link-button.choice:hover {
     color: #BFBFBF;
 }
 
-
-
 #suggest-title button {
     color: #ffffff;
     background-color: #1e90ff;
@@ -164,12 +162,17 @@ div#moderation_tools.sidecontentbox.collapsible div{
     width: 60px;
     text-align: center;
     border: 1px solid gray;
+        -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .linkflairlabel:hover {
-    border: 1px solid #1e90ff !important;
-    background: white !important;
-    color: #1e90ff !important;
+    border: 1px solid white !important;
+    background: #1e90ff !important;
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .linkflair-help .linkflairlabel{
@@ -202,7 +205,7 @@ div#moderation_tools.sidecontentbox.collapsible div{
 
 /* Submission */
 
-div.infobar {
+#link-desc {
     background-color: red !important;
     color: white !important;
     font-size: 22px;
@@ -215,7 +218,26 @@ div.infobar {
     transition: all 0.3s ease;
 }
 
-div.infobar:hover {
+#link-desc:hover {
+    background-color: white !important;
+    color: red !important;
+    border: 1px solid red !important;
+}
+
+#text-desc {
+    background-color: red !important;
+    color: white !important;
+    font-size: 22px;
+    border-radius: 4px;
+    border: 1px solid white !important;
+    padding: 20px;
+    text-align: justify;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#text-desc:hover {
     background-color: white !important;
     color: red !important;
     border: 1px solid red !important;
@@ -408,7 +430,7 @@ div.bottom {
 }
 
 #header-bottom-left {
-    height: 65px;
+    height: 105px;
     padding-top: 0;
     background-image: url(%%Header-Image%%);
     background-repeat: no-repeat;
@@ -489,10 +511,10 @@ div#moresearchinfo{
 .btn{
      background-color: #1e90ff !important;
      color: white !important;
-     padding: 1rem;
+     padding: 10px;
      border: 1px solid white !important;
      border-radius: 4px;
-         -webkit-transition: all 0.3s ease;
+     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -509,16 +531,30 @@ body:not(.loggedin) .arrow {
     visibility: hidden ;
 }
 
+ul.tabmenu {
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 84px;
+    right: 350px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+    padding-left: 108px;
+    width: 100%
+}
+
 .tabmenu a.choice {
     background-color: transparent;
     color: #f0f0f0;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
     font-size: 15px;
     position: relative;
     top: 12px;
     left: -100px;
+    
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tabmenu a.choice:hover {
@@ -526,21 +562,15 @@ body:not(.loggedin) .arrow {
     color: #BFBFBF;
 }
 
-.selected a {
-    color: white;
-    border-width: 0;
-    border-style: none;
+.tabmenu li.selected a {
+    color: darkorange !important;
+    border-width: 0 !important;
+    border-style: none !important;
     text-transform: uppercase;
-    background-color: transparent;
+    background-color: white !important;
+    padding: 12px;
 }
 
-.selected a:hover {
-    background-color: transparent;
-    color: #BFBFBF;
-    border-width: 0;
-    border-style: none;
-    text-transform: uppercase;
-}
 
 ul.flat-vert.icon-menu.hover a {
     color: white;
@@ -583,24 +613,6 @@ div.thing {
     background-color: #fff;
 }
 
-ul.tabmenu {
-    height: 40px;
-    position: absolute;
-    left: 0px;
-    top: 84px;
-    right: 350px;
-    background-color: #1e90ff;
-    padding: 0;
-    margin: 0;
-    padding-left: 108px;
-    border-radius: 0 0 10px 0;
-    -webkit-box-shadow: 3px 6px 8px 1px rgba(0,0,0,0.3);
-    box-shadow: 3px 6px 8px 1px rgba(0,0,0,0.3);
-}
-
-div.sitetable.linklisting {
-    margin-top: 70px;
-}
 
 div.sr-list {
     background: #1e90ff;
@@ -733,34 +745,6 @@ a.default-header {
     background: white !important;
     color: green;
     border: 1px solid green;
-}
-
-/* Scale Stuff */
-
-@media (max-width: 800px) {
-    .side{
-        width: 1px;
-        display: none;
-    }
-    
-    div.thing{
-        width: 100%;
-        margin: 0 5px 25px 5px;
-    }
-    
-    .listing-page .thing {
-    margin: 10px 10px 0 10px;
-    -webkit-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.25);
-    -moz-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.25);
-    box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.25);
-    border-radius: 4px 4px 4px 4px;
-    border: 1px solid #C7C7C7;
-    padding: 2px;
-    }
-    
-    ul.tabmenu{
-        width: 100%;
-    }
 }
 
 /* [RES] Reddit Enhancement Suite Compatability */
@@ -969,6 +953,25 @@ div.res-icon {
 .RESImage {
     animation-name: FadeIn;
     animation-duration: 0.5s;
+}
+
+div.res-navTop {
+    position: absoulte !important;
+    top: 84px !important;
+    height: 30px !important;
+    background: white !important;
+}
+
+div.userbarHide {
+    color: #1e90ff !important;
+    background-color: white !important;
+    border-radius: 0px !important;
+}
+
+div.userbarShow {
+    color: #1e90ff !important;
+    background-color: white !important;
+    border-radius: 0px !important;
 }
 
 @keyframes FadeIn {
