@@ -855,8 +855,8 @@ div.res-icon {
 
 .RESshortcutside{
     background: green !important;
-    color: #ffffff;
-    border: 1px solid white;
+    color: #ffffff !important;
+    border: 1px solid white !important;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -892,7 +892,7 @@ div.res-icon {
 .RESDashboardToggle{
     background: green !important;
     color: #ffffff !important;
-    border: 1px solid white;
+    border: 1px solid white !important;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -965,4 +965,17 @@ div.res-icon {
 #baconBit {     
     background-image: url(%%Konami-Code-Bacon%%) !important;
  }
-  
+
+.RESImage {
+    animation-name: FadeIn;
+    animation-duration: 0.5s;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
